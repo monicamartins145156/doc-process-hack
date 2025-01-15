@@ -6,6 +6,8 @@ from model_paystubs import model_paystubs
 from model_loanforms import model_loanforms
 from model_loanagreements import model_loanagreements
 
+## new line 
+
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.blob_trigger(arg_name="myblob", path="data/loanagreements/{name}",
